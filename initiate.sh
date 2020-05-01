@@ -1,5 +1,8 @@
 #!/bin/bash
 wget "https://wordpress.org/latest.zip" -O vestacp_wp_temp.zip
+rm index.html
+rm robots.txt
+rm index.html.original
 unzip vestacp_wp_temp.zip
 mv wordpress/* ./
 rmdir wordpress
